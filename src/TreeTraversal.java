@@ -103,6 +103,7 @@ public class TreeTraversal {
 
         return leftCount + rightNode + 1;
     }
+
     //  Ques2: sum of nodes
     public static int sum(Node root){
 
@@ -127,6 +128,8 @@ public class TreeTraversal {
         int myHeight = max(leftHeight, rightHeight) + 1;
         return myHeight;
     }
+
+//    -----------------------------------------------------------------------------------------------------------------
 
 //  Ques4: Diameter of the tree
 //  Time Complexity: O(n^2)
@@ -173,6 +176,8 @@ public class TreeTraversal {
 
         return new TreeInfo(myHeight, myDiam);
     }
+
+//    -----------------------------------------------------------------------------------------------------------------
 
 //  Ques5: Subtree of a tree
     //  Time complexity: O()
