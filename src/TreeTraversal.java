@@ -29,7 +29,7 @@ public class TreeTraversal {
         }
     }
 
-//  PreOrder Traversals
+    //  PreOrder Traversals
     public static void preOrder(Node root){
         if (root == null){
             return;
@@ -39,7 +39,7 @@ public class TreeTraversal {
         preOrder(root.right);
     }
 
-//  Inorder Traversal
+    //  Inorder Traversal
     public static void inOrder(Node root){
         if(root == null) {
             return;
@@ -48,6 +48,8 @@ public class TreeTraversal {
         System.out.print(root.data + " ");
         inOrder(root.right);
     }
+
+    //  Post Order Traversal
     public static void postOrder(Node root){
         if(root == null) {
             return;
@@ -57,6 +59,8 @@ public class TreeTraversal {
         System.out.print(root.data + " ");
 
     }
+
+    //  Level Order Traversal
     public static void levelOrder(Node root){
         if(root == null) {
             return;
