@@ -4,8 +4,8 @@ public class DiameterOfTree {
 
     static class Node{
         int data;
-        TreeTraversal.Node left;
-        TreeTraversal.Node right;
+        Node left;
+        Node right;
         Node(int data){
             this.data = data;
             this.left = null;

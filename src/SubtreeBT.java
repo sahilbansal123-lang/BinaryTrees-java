@@ -5,15 +5,19 @@ public class SubtreeBT {
             return true;
         }
 
-        if (tree1 == null || tree2 == null) {
+        if (tree1 == null || tree2 == null || tree1.data != tree2.data) {
             return false;
         }
 
-        if (tree1.data != tree2.data) {
+        if(!isIdentical(tree1.left, tree2.left)) {
             return false;
         }
 
-        return isIdentical(tree1.left, tree2.left) && isIdentical(tree1.right, tree2.right);
+        if (!isIdentical(tree1.right, tree2.right)) {
+            return false;
+        }
+
+        return true;
     }
 
 
