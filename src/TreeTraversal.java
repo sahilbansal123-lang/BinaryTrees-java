@@ -218,10 +218,6 @@ public static boolean isSubtree(Node tree, Node subTree) {
         System.out.println(count(root));
         System.out.println(sum(root));
         System.out.println(height(root));
-        System.out.println(diameter(root));
-        TreeInfo result = diameter2(root);
-        System.out.println("Height: " + result.height);
-        System.out.println("Diameter: " + result.diam);
         System.out.println(sumAtKth(root, 2));
 
     }
