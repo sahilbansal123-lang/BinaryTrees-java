@@ -129,55 +129,6 @@ public class TreeTraversal {
         return myHeight;
     }
 
-//    -----------------------------------------------------------------------------------------------------------------
-
-//  Ques4: Diameter of the tree
-//  Time Complexity: O(n^2)
-    public static int diameter(Node root){
-        if (root == null) {
-            return 0;
-        }
-        int dia1 = diameter(root.left);
-        int dia2 = diameter(root.right);
-        int dia3 = height(root.left) + height(root.right) + 1;
-
-        return Math.max( Math.max(dia1, dia2), dia3);
-    }
-
-    static class TreeInfo{
-        int height;
-        int diam;
-
-        TreeInfo(int height, int diam){
-            this.height = height;
-            this.diam = diam;
-        }
-    }
-
-//    Time Complexity: O(N)
-    public static TreeInfo diameter2(Node root) {
-        if(root == null) {
-            return new TreeInfo(0, 0);
-        }
-
-        TreeInfo leftTI = diameter2(root.left);
-        TreeInfo rightTI = diameter2(root.right);
-
-        int myHeight = Math.max(leftTI.height, rightTI.height) + 1;
-
-
-        int diam1 = leftTI.height + rightTI.height + 1;
-        int diam2 = leftTI.diam;
-        int diam3 = rightTI.diam;
-
-
-        int myDiam = Math.max(diam1, Math.max(diam2, diam3));
-
-
-        return new TreeInfo(myHeight, myDiam);
-    }
-
-//    -----------------------------------------------------------------------------------------------------------------
 
 //  Ques5: Subtree of a tree
     //  Time complexity: O()
