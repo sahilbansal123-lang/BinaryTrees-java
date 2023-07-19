@@ -90,7 +90,6 @@ public class TreeTraversal {
         }
     }
 
-
     //  Ques1: Count of nodes
     public static int count(Node root){
 
@@ -130,7 +129,6 @@ public class TreeTraversal {
     }
 
 
-
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 7, -1, -1, 3, -1, 6, -1, -1, };
 //        int nodes[] = {2, 4, -1, -1, 5};
@@ -145,7 +143,6 @@ public class TreeTraversal {
         System.out.println(count(root));
         System.out.println(sum(root));
         System.out.println(height(root));
-        System.out.println(sumAtKth(root, 2));
 
     }
 }
