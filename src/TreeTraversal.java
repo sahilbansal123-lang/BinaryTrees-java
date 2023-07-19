@@ -130,41 +130,6 @@ public class TreeTraversal {
     }
 
 
-//  Ques6: sum of nodes at Kth level\
-    public static int sumAtKth(Node root, int k){
-        if(root == null) {
-            return 0;
-        }
-        Queue<Node> q = new LinkedList<>();
-        q.add(root);
-        q.add(null);
-        int level = 0;
-        int sum = 0;
-        while(!q.isEmpty()){
-            Node currNode = q.remove();
-            if (currNode == null) {
-                level++;
-                if(q.isEmpty()){
-                    break;
-                } else {
-                    q.add(null);
-                }
-            } else {
-                if (level == k ){
-                    sum = sum + currNode.data;
-                }
-                if (currNode.left!=null) {
-                    q.add(currNode.left);
-                }
-                if (currNode.right!=null) {
-                    q.add(currNode.right);
-                }
-            }
-        }
-        return sum;
-    }
-
-
 
     public static void main(String[] args) {
         int nodes[] = {1, 2, 4, -1, -1, 7, -1, -1, 3, -1, 6, -1, -1, };
