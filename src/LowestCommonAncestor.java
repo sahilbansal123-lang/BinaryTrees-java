@@ -13,6 +13,11 @@ public class LowestCommonAncestor {
             this.left = null;
         }
     }
+
+//    -----------------------------------------------------------------------------------------------------------------
+
+                            //   APPROACH 1
+
     public static boolean getPath(Node root, int n, ArrayList<Node> path) {
         if (root == null) {
             return false;
@@ -50,6 +55,10 @@ public class LowestCommonAncestor {
         Node lca = path1.get(i-1);
         return lca;
     }
+
+//----------------------------------------------------------------------------------------------------------------------
+
+                                        //  APPROACH 2
 
 
 
